@@ -30,8 +30,8 @@ class MinimalVC: UITableViewController {
             switch result {
             case .Success(let movies):
                 for movie in movies {
-                    if let movie = movie {
-                        strongSelf.movies.append(movie)
+                    if let tempMovie = movie {
+                        strongSelf.movies.append(tempMovie)
                     }
                 }
                 DispatchQueue.main.async {
